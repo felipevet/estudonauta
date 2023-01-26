@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de HOVER</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p { /*usa-se o sinal de ">" quando se quer marcar uma tag especifica dentro da div*/
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            color: white;
+            background-color: black;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        div:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vel temporibus veritatis mollitia odio. Sit eligendi est fugiat praesentium? Eum ipsa pariatur temporibus laudantium ea, quam alias quo totam esse.</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

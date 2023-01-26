@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+        
+        div {
+            display: inline-block; /* deixa tudo na mesma linha*/
+            background-color: lightgray;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+        }
+        div:hover { /* :hover -> faz uma ação quando o ponteiro do mouse esta por cima do elemento*/
+            background-color: aqua;
+        }
+
+        div:active {
+            background-color: brown;
+        }
+
+        div#d1 {
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+</body>
+</html>

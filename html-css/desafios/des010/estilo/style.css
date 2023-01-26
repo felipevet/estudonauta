@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url(../fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
+:root {
+
+    --cor1: #c5ebd6;
+    --cor2: #83E1AD;
+    --cor3: #2FA866;
+    --cor4: #1A5C37;
+    --cor5: #063d1e;
+
+    --font-padrao: Arial, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: 'Android', cursive;
+}
+
+* {
+    /* Quando se usa o "*" no css significa que estamos configurando todos os elementos, ou seja uma configuração global*/
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: var(--font-padrao);
+
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor5));
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--font-destaque);
+    font-size: 3em;
+    font-weight: normal;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.270);
+}
+
+header > p {
+    color: white;
+    font-family: var(--font-padrao);
+    font-size: 1.2em;
+    max-width: 500px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.270);
+}
+
+nav {
+    background-color: var(--cor5);
+    padding: 10px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.370);
+}
+
+nav > a {
+    color: white;
+    font-family: var(--font-padrao);
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav > a:hover {
+    color: var(--cor2);
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    min-width: 280px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.452);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+main  h1 {
+    color: var(--cor5);
+    font-family: var(--font-android);
+    font-size: 1.8em;
+    font-weight: normal;
+    padding-top: 20px;
+    
+}
+
+main h2 {
+    font-family: var(--font-android);
+    font-weight: normal;
+    font-size: 1.3em;
+    color: var(--cor3);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    padding: 1px;
+    text-indent: 8px;
+    
+}
+
+main  p {
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 20px 0px;
+}
+
+img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor3);
+    font-weight: bolder;
+}
+
+main a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+main strong {
+    color: var(--cor3);
+    font-weight: bold;
+}
+
+div.video {
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
+    position: relative;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+aside {
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.250);
+}
+
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside ul {
+    list-style-type: '\2714\00A0\00A0'; /* troca o conteudo da marcação da lista. '00A0 coloca um esoaço*/
+    list-style-position: inside;
+    columns: 2;
+    
+}
+
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
