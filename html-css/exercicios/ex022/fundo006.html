@@ -4,24 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
             background-repeat: no-repeat;
             background-size: cover;
+            background-attachment: fixed;*/
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover;
+
+            /* background color image position repeat [size(apesar da regra na documentação, os navegadores nao aceitam o size dentro da shorthand tendo que colocar ela separada)] attachment*/
         }
 
         main {
             background-color: whitesmoke;
-            padding: 10px;
-            width: 400px;
+            padding: 20px;
+            max-width: 600px;
             border: 1px solid black;
             border-radius: 16px;
             margin: auto;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main > p {
+            text-indent: 25px;
+            text-align: justify;
         }
     </style>
 </head>
@@ -30,6 +41,16 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus neque sint saepe tenetur in delectus nostrum libero assumenda nam officiis, dolorem incidunt similique, ad aperiam voluptatum voluptatem aut placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus temporibus minus itaque tempore dolor ut illo minima. Quo, recusandae. Tempore soluta minima culpa, architecto itaque provident illo sint ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero minus earum nostrum mollitia repudiandae pariatur. Assumenda facere, voluptatem nesciunt expedita cumque quam quaerat adipisci, velit, repellat exercitationem voluptatibus consequatur?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus neque sint saepe tenetur in delectus nostrum libero assumenda nam officiis, dolorem incidunt similique, ad aperiam voluptatum voluptatem aut placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus temporibus minus itaque tempore dolor ut illo minima. Quo, recusandae. Tempore soluta minima culpa, architecto itaque provident illo sint ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero minus earum nostrum mollitia repudiandae pariatur. Assumenda facere, voluptatem nesciunt expedita cumque quam quaerat adipisci, velit, repellat exercitationem voluptatibus consequatur?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus neque sint saepe tenetur in delectus nostrum libero assumenda nam officiis, dolorem incidunt similique, ad aperiam voluptatum voluptatem aut placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus temporibus minus itaque tempore dolor ut illo minima. Quo, recusandae. Tempore soluta minima culpa, architecto itaque provident illo sint ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero minus earum nostrum mollitia repudiandae pariatur. Assumenda facere, voluptatem nesciunt expedita cumque quam quaerat adipisci, velit, repellat exercitationem voluptatibus consequatur?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus neque sint saepe tenetur in delectus nostrum libero assumenda nam officiis, dolorem incidunt similique, ad aperiam voluptatum voluptatem aut placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus temporibus minus itaque tempore dolor ut illo minima. Quo, recusandae. Tempore soluta minima culpa, architecto itaque provident illo sint ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero minus earum nostrum mollitia repudiandae pariatur. Assumenda facere, voluptatem nesciunt expedita cumque quam quaerat adipisci, velit, repellat exercitationem voluptatibus consequatur?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus neque sint saepe tenetur in delectus nostrum libero assumenda nam officiis, dolorem incidunt similique, ad aperiam voluptatum voluptatem aut placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus temporibus minus itaque tempore dolor ut illo minima. Quo, recusandae. Tempore soluta minima culpa, architecto itaque provident illo sint ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero minus earum nostrum mollitia repudiandae pariatur. Assumenda facere, voluptatem nesciunt expedita cumque quam quaerat adipisci, velit, repellat exercitationem voluptatibus consequatur?</p>
+
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus neque sint saepe tenetur in delectus nostrum libero assumenda nam officiis, dolorem incidunt similique, ad aperiam voluptatum voluptatem aut placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi accusamus temporibus minus itaque tempore dolor ut illo minima. Quo, recusandae. Tempore soluta minima culpa, architecto itaque provident illo sint ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum libero minus earum nostrum mollitia repudiandae pariatur. Assumenda facere, voluptatem nesciunt expedita cumque quam quaerat adipisci, velit, repellat exercitationem voluptatibus consequatur?</p>
     </main>
 </body>
