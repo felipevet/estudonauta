@@ -5,13 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos se iframe</title>
+
 </head>
+
+<!-- O tamanho padrão é de 300x150 podemos mudar isso diretamente na tag<iframe> porém  o ideal para configurar a altura e largura é utilizar css e essas são soberanas nesse caso.-->
+<!-- Existe um parâmetro no iframe que impede que a pagina faça a rolagem, mesmo que o conteúdo seja grande. esse parâmetro é o scolling. tem como atributos o:
+    "auto" que é o padrão;
+    "yes" que cria uma barra de rolagem independente do conteúdo ser grande ou não;
+    "no" que impede a rolagem do conteúdo, porém não são todos os navegadores e sist op que aceitam. -->
+
 <body>
     <h1>Testando o uso de um iframe</h1>
     <p>
         Acessando o site do         
-        <iframe src="http://www.cursoemvideo.com" frameborder="0"></iframe>
+        <iframe src="http://www.cursoemvideo.com" frameborder="0">
+            <a href="http://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>
+        </iframe>
         para aprender a programar
+    </p>
+<!--entre as tags <iframe></iframe> o ideal é colocar algo que possa identificar o conteúdo pois alguns navegadores nao aceitam o iframe, uma dia é colocar um link para a pagina correspondente -->
+    <p>
+       O repositório do guanabara
+        <iframe src="https://gustavoguanabara.github.io" frameborder="0">
+            <a href="http://gustavoguanabara.github.io" target="_blank">Github</a>
+        </iframe>
+       Também é bem legal! 
     </p>
 </body>
 </html>
