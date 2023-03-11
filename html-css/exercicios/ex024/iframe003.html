@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+
+        iframe#tela{
+            width: 90vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, autem explicabo aliquid laudantium earum quasi odit placeat aliquam obcaecati voluptas deserunt ullam nostrum, ipsum nulla ducimus sunt consequuntur tempora illum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nobis consectetur hic corrupti blanditiis ex quia maxime, eos quo dicta maiores provident quas placeat temporibus libero. Omnis accusantium aliquam voluptatibus.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi nobis exercitationem inventore voluptatum vero pariatur voluptates, debitis officiis expedita at consequatur, illo dolorem ea beatae deleniti! Exercitationem, fugit voluptas?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma opção</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi nobis exercitationem inventore voluptatum vero pariatur voluptates, debitis officiis expedita at consequatur, illo dolorem ea beatae deleniti! Exercitationem, fugit voluptas?</p><img src='imagens/cursoemvideo.png'>">Infelizmente seu navegador não é compatível com esse recurso.</iframe>
+
+    <!-- Exieste a opçao srcdoc onde podemos criar um documento HTML dentro do iframe não é o mais recomendado. O ideal é criar um arquivo e carregar ele no iframe com o src.-->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed accusantium nesciunt corrupti ex maiores fuga temporibus sunt minus excepturi? Saepe, sequi! Minima, temporibus deleniti ab voluptas vitae unde dolores facilis.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto maiores neque voluptate consectetur porro veritatis repellendus quibusdam itaque. Perspiciatis nesciunt voluptates corporis explicabo odit vero, et rerum eum velit incidunt.
+    </p>
+</body>
+</html>
