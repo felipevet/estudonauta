@@ -9,8 +9,27 @@
 <body>
     <h1>Teste com formulário</h1>
     <form action="" method="get" autocomplete="on">
-        <label for="inome">Nome:</label>
-        <input type="text" name="nome" id="inome" required minlength="3" maxlength="30" placeholder="Nome completo" autocomplete="name">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required minlength="3" maxlength="30" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia" required min="0" max="10" placeholder="Média" step="0.1">
+        </p>
+        <p>
+            <label for="idata">Data da prova:</label>
+            <input type="date" name="data" id="idata">
+        </p>
+        <p>
+            <label for="ihora">Horário da prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <p>
+            <input type="submit"  value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
     </form>
 </body>
 </html>
