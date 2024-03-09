@@ -7,12 +7,32 @@
     <style>
         body {
             font: normal 18pt arial;
+            background-color: aliceblue;
+            
+        }
+
+        .container__geral {
+            max-width: 600px;
+            height: 600px;
+            margin: auto;
+        }
+
+        #button {
+            border: none;
+            border-radius: 15px;
+            background-color: #3838d689;
+        }
+
+        #button:hover {
+            background-color: aliceblue;
+            color: blue;
         }
 
         input {
             width: 80px;
             border: none;
             border-bottom: 1px solid black;
+            background-color: aliceblue;
         }
         
         .resultado {
@@ -29,14 +49,14 @@
     </style>
 </head>
 <body>
-    <h1>Somando números</h1>
-
-    <input type="number" name="txtn1" id="txtn1"> + 
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="SOMAR" onclick="somar()">
-
-    <div id="res" class="resultado">
-        resultado
+    <div class="container__geral">
+        <h1>Somando números</h1>
+        <input type="number" name="txtn1" id="txtn1"> +
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="SOMAR" id="button" onclick="somar()">
+        <div id="res" class="resultado">
+            resultado
+        </div>
     </div>
 
     <script>
