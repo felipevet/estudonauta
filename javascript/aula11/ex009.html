@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * { margin: 0; padding: 0;}
+        body {
+            width: 100%;
+            background-color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container-global {
+            width: 600px;
+            height: 500px;
+            margin: 150px auto;
+            background-color: lightgrey;
+            border-radius: 15pt;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20pt;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .form {
+            display: flex;
+            gap: 10pt;
+            padding: 10pt;
+        }
+
+        #txtnac {
+            border: none;
+            border-bottom: 2pt solid black;
+            background-color: lightgray;
+            text-align: center;
+        }
+
+        .button {
+            padding: 1pt 10pt;
+            border-radius: 10pt;
+            color: blue;
+        }
+
+    </style>
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <div class="container-global">
+        <h1>Sistema de verificação de nacionalidade</h1>
+
+        <div class="form">
+            <span>Em qual país você nasceu? </span><input type="text" name="txtnac" id="txtnac">
+            <input class="button" type="button" value="Consultar" onclick="consultar()">
+        </div>
+
+        <div id="res" class="resultado">
+            teste
+        </div>
+    </div>
+
+    <script>
+
+        function consultar() {
+            var cons = document.querySelector('input#txtnac')
+            var res = cons.value.toUpperCase()
+            
+            var resultado = document.querySelector('div#res')
+            resultado.innerHTML = `${res}`
+            
+            if (res == 'BRASIL') {
+                 resultado.innerHTML = `Que legal, você é <strong>BRASILEIRO</srong>`
+            } else {
+                resultado.innerHTML = `Que legal, você é <strong>ESTRANGEIRO</strong>`
+            }
+        }
+
+    </script>
+</body>
+</html>
