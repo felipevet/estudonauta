@@ -15,25 +15,25 @@
 
     <main>
         <section>
-            <div class="form">
+            <div class="form">  
+                <p>Digite o ano do seu nascimento: <input type="number" name="ent-usr" id="ent-usr" min="0"></p>
                 <p>
-                    Ano de nascimento:
-                    <input type="number" name="txtidade" id="txtidade" min="0">
-                </p>
-                <p>sexo: 
-                    <input type="radio" name="sexo" id="masc" class="masc" checked>
+                    Sexo: 
+                    <input type="radio" name="rd-sexo" id="masc" checked>
                     <label for="masc">Masculino</label>
-                    <input type="radio" name="sexo" id="fem" class="fem">
-                <label for="fem">Feminino</label></p>
+                    <input type="radio" name="rd-sexo" id="fem">
+                    <label for="fem">Feminino</label>
+                </p>
 
-                <p  class="button" id="button"><input type="button" value="Verificar" onclick="verificar()"></p>
+                <p class="button"><input type="button" value="Verificar" onclick="(verificar())"></p>
+                 
+            </div>
 
-                <div class="img" id="res">
+            <div class="img" id="res">
 
-                    Preencha os dados acima para ver o resultado!
-                                  
-                </div>
                 
+                Preencha os dados acima para ver o resultado!
+                              
             </div>
 
         </section>
