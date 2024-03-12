@@ -7,7 +7,7 @@ function contar() {
     
     if(txtStart.value.length == 0 || txtEnd.value.lenght == 0 || txtPass.value.lenght == 0) {
         parTxt.innerHTML = `Impossível contar!!!`
-    } else if(txtStart.value < txtEnd) {
+    } else if(Number(txtStart.value) > Number(txtEnd.value)) {
         for(var i = Number(txtStart.value); i >= Number(txtEnd.value); i -= Number(txtPass.value)) {
             resp.innerHTML += ` ${i} &#128073; `
         }
