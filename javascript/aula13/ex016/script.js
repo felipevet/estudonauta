@@ -7,6 +7,12 @@ function contar() {
     
     if(txtStart.value.length == 0 || txtEnd.value.lenght == 0 || txtPass.value.lenght == 0) {
         parTxt.innerHTML = `Impossível contar!!!`
+    } else if(txtStart.value < txtEnd) {
+        for(var i = Number(txtStart.value); i >= Number(txtEnd.value); i -= Number(txtPass.value)) {
+            resp.innerHTML += ` ${i} &#128073; `
+        }
+        resp.innerHTML += ` &#9873;`
+
     } else if(Number(txtPass.value) == 0 ) {
         window.alert(`Passo inválido! Considerando PASSO = 1 !`)
         parTxt.innerHTML = `Contando ... `
