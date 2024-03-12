@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0;}
+
+body {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: lightblue;
+    font: normal 15pt arial;
+}
+
+header {
+    max-width: 800pt;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    margin-top: 20pt;
+    padding: 10pt;
+}
+
+section {
+    max-width: 500px;
+    box-sizing: border-box;
+    margin: 20pt auto;
+    padding: 20pt;
+    border-radius: 20pt;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.171);
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 20pt;
+}
+
+p {
+    padding: 5pt;
+}
+
+.button {
+    margin-top: 15px;
+    padding: 2pt 8pt;
+}
+
+footer {
+    max-width: 800pt;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+}
