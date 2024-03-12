@@ -43,6 +43,10 @@ p {
     padding: 2pt 8pt;
 }
 
+#txt {
+    margin-bottom: 10px;
+}
+
 footer {
     max-width: 800pt;
     margin: 0 auto;
