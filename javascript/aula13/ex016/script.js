@@ -1,31 +1,32 @@
 function contar() {
-    var txtStart = document.querySelector('input#txt-start')
-    var txtEnd = document.querySelector('input#txt-end')
-    var txtPass = document.querySelector('input#txt-pass')
-    var resp = document.querySelector('div#res')
-    var parTxt = document.querySelector('p#txt')
-    
-    if(txtStart.value.length == 0 || txtEnd.value.lenght == 0 || txtPass.value.lenght == 0) {
-        parTxt.innerHTML = `Impossível contar!!!`
-    } else if(Number(txtStart.value) > Number(txtEnd.value)) {
-        for(var i = Number(txtStart.value); i >= Number(txtEnd.value); i -= Number(txtPass.value)) {
-            resp.innerHTML += ` ${i} &#128073; `
-        }
-        resp.innerHTML += ` &#9873;`
+    var start = document.querySelector('input#txt-start')
+    var end = document.querySelector('input#txt-end')    
+    var pass = document.querySelector('input#txt-pass')
+    var res = document.querySelector('div#res')
 
-    } else if(Number(txtPass.value) == 0 ) {
-        window.alert(`Passo inválido! Considerando PASSO = 1 !`)
-        parTxt.innerHTML = `Contando ... `
-        for(var i = Number(txtStart.value); i <= Number(txtEnd.value); i++) {
-            resp.innerHTML += ` ${i} &#128073; `
-        }
-        resp.innerHTML += ` &#9873;`
+    if (start.value.length == 0 || end.value.length == 0 || pass.value.length == 0) {
+        window.alert(`[ERRO!!!] Verifique os campos digitados e tente novamente`)
+        res.innerHTML `Impossível contar!!`
     } else {
-        parTxt.innerHTML = `Contando ... `
-        for(var i = Number(txtStart.value); i <= Number(txtEnd.value); i += Number(txtPass.value)) {
-            resp.innerHTML += ` ${i} &#128073; `
+        res.innerHTML = `contando ... <br>`
+        let ini = Number(start.value)
+        let fim = Number(end.value)
+        let pas = Number(pass.value)
+
+        if (pas <= 0) {
+            window.alert(`Passo inválido!! Considerando PASSO 1`) 
+            pas = 1
         }
-        resp.innerHTML += ` &#9873;`
+        
+        if (ini < fim) { //contagem crescente
+            for (let c = ini; c <= fim; c += pas) {
+                res.innerHTML += ` ${c} &#128073; `
+            }
+        } else { //contagem decrescente
+            for (let c = ini; c >= fim; c -= pas) {
+                res.innerHTML += ` ${c} &#128073; `
+            }
+        }
     }
-    
+    res.innerHTML += ` &#9873;`
 }
