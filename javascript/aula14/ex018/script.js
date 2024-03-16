@@ -1,10 +1,11 @@
 var vet = []
 function adicionar() {
     var n = document.querySelector('input#txtNum')
+    var res = document.querySelector('div#resp')
+    res.innerHTML = ``
     let num = Number(n.value)
     var tab = document.querySelector(`select#slc-res`)
     var conf = ''
-    //res.innerHTML = ``
     if (n.value.length == 0) {
         window.alert(`[ERRO] Digite um valor`)
     } else {
@@ -25,9 +26,8 @@ function adicionar() {
                 tab.append(item)
             }
         }
-    }
+    }    
 }
-
 function finalizar() {
     var res = document.querySelector('div#resp')
     var n = document.querySelector('input#txtNum')
