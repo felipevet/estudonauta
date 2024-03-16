@@ -52,6 +52,10 @@ select {
     overflow: auto;
 }
 
+#resp {
+    padding: 15px 0;
+}
+
 footer {
     max-width: 800pt;
     margin: 0 auto;

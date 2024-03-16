@@ -1,8 +1,7 @@
 var vet = []
 function adicionar() {
     var n = document.querySelector('input#txtNum')
-    var res = document.querySelector('div#resp')
-    var num = Number(n.value)
+    let num = Number(n.value)
     var tab = document.querySelector(`select#slc-res`)
     var conf = ''
     //res.innerHTML = ``
@@ -27,14 +26,32 @@ function adicionar() {
             }
         }
     }
-
-    res.innerHTML = `A lista de números é: ${vet} `
-    
 }
 
-/* 
-let item = document.createElement('option')
-                    item.text = `O valor ${num} foi adicionado.`
-                    tab.append(item)
-
-*/
+function finalizar() {
+    var res = document.querySelector('div#resp')
+    var n = document.querySelector('input#txtNum')
+    let num = Number(n.value)
+    var tot = 0
+    var media = 0
+    var menor = vet[0]
+    var maior = vet[0]   
+    res.innerHTML = `Ao todo temos ${vet.length} números cadastrados <br>`
+    for(var cont in vet) {
+        if (maior< vet[cont] ) {
+            maior = vet[cont]
+        }
+    }
+    res.innerHTML+= `O maior valor informado foi ${maior}<br>`
+    for(var cont in vet) {
+        if (menor > vet[cont]) {
+            menor = vet[cont]
+        }
+    }
+    res.innerHTML+= `O menor valor informado foi ${menor}<br>`
+    for(var cont in vet) {
+        tot += vet[cont]
+    }
+    res.innerHTML+= `Somando todos os valores, temos ${tot}<br>`
+    res.innerHTML+= `A média dos valores digitados é ${media = tot/vet.length}`
+}
