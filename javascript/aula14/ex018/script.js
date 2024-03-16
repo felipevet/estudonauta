@@ -28,7 +28,7 @@ function adicionar() {
         }
     }
 
-    res.innerHTML = `A lista de números é: ${vet}`
+    res.innerHTML = `A lista de números é: ${vet} `
     
 }
 
