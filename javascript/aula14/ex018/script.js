@@ -26,6 +26,8 @@ function adicionar() {
                 tab.append(item)
             }
         }
+        n.value = ""
+        n.focus()
     }    
 }
 function finalizar() {
@@ -36,7 +38,10 @@ function finalizar() {
     var media = 0
     var menor = vet[0]
     var maior = vet[0]   
-    res.innerHTML = `Ao todo temos ${vet.length} números cadastrados <br>`
+    if (vet.length == 0) {
+        window.alert(`Adicione valores antes de finalizar!!`)
+    } else {
+        res.innerHTML = `Ao todo temos ${vet.length} números cadastrados <br>`
     for(var cont in vet) {
         if (maior< vet[cont] ) {
             maior = vet[cont]
@@ -54,4 +59,5 @@ function finalizar() {
     }
     res.innerHTML+= `Somando todos os valores, temos ${tot}<br>`
     res.innerHTML+= `A média dos valores digitados é ${media = tot/vet.length}`
+    }
 }
